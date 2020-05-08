@@ -13,6 +13,7 @@ $(document).ready(function(){
                 images[i].style.display = "";
             }else{
                 images[i].style.display = "none";
+        
             }
         }
     })
