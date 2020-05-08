@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(204, 201, 201);
+}
+
+/*navbar*/
+.container{
+  width: 90%; 
+}
+.input{
+  display: block;
+  margin: 3% auto;
+  padding: 10px;
+  border: none;
+  width: 200px;
+  height: 55px;
+  border-radius: 5%;
+  background-color: lightgray;
+   transition: width 1s, height 1s; 
+}
+ .input:focus{
+  width: 250px;
+  height: 60px;
+ } 
+
+h2{
+  text-align: center;
+  text-shadow: 1px 0.5px gray;
+  color: rgb(65, 64, 64);
+}
+h2:hover{
+  color: rgba(65, 64, 64, 0.5);
+}
+
+/*photo*/
+#anchor-tag{
+  width: 90%;
+  margin: 5% 10%;
+}
+img{
+ width: 90%;
+  padding: 10px;
+}
+
+/*footer*/
+footer {
+  width: 90%;
+  max-height: 8%;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 3%;
+}
+/*media*/
+@media (min-width: 768px){
+  body{
+    background:linear-gradient(rgb(151, 140, 151), transparent 90%),
+      linear-gradient(0deg,white, transparent),
+   rgb(133, 93, 133) url('../photos/bgwaterfallSm.jpg') no-repeat center;
+  background-size: cover;
+  height: 100%;
+  }
+  /*navbar*/
+  .container{
+    width: 80%;
+  }
+  .input{
+      margin-left:15%;  
+    }
+  /*photo*/
+  img{
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px){
+  
+
+/*navbar*/
+.container{
+  width: 90%;
+  margin: auto;
+  
+}
+.input{
+  margin-left:8%;
+}
+/*photo*/
+
+img{
+  width: 22.5%;
+box-shadow:  1px 2px 2px 1px rgba(23, 23, 24, 0.2);
+padding: 10px;
+}
+img:hover{
+  transform: scale3d(0.8, 0.9, 1);
+}
+}
+
